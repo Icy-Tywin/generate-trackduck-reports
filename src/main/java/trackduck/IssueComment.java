@@ -42,6 +42,11 @@ public class IssueComment
         }
     }
 
+    public IssueComment()
+    {
+
+    }
+
 
     public String getAuthor(String commentListPosition)
     {

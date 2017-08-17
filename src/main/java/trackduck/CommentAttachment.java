@@ -18,6 +18,13 @@ public class CommentAttachment
         this.Text = driver.findElement(By.xpath(ObjRepo.commentXpath + commentListPosition + ObjRepo.commentAttachmentXpath + attachmentListPosition + ObjRepo.attachmentTextXpath)).getAttribute("textContent");
     }
 
+    public CommentAttachment()
+    {
+        this.Url = "http://www.google.co.uk/";
+        this.Text = "Default Comment Attachment Text";
+    }
+
+
     public String getUrl(String commentListPosition, String attachmentListPosition)
     {
         String newUrl = "";
