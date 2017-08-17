@@ -15,9 +15,6 @@ import javax.xml.xpath.XPathFactory;
 import java.io.File;
 import java.io.FileInputStream;
 
-/**
- * Created by justine.bateman on 16/05/2016.
- */
 public class Settings
 {
     public static String SETTINGS_FILE_PATH = "C:\\Automation\\Settings\\appsettings.xml";

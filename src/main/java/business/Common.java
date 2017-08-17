@@ -31,6 +31,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class Common
 {
+    public static String resourcePathFolder = "C:\\Automation\\Share";
 
     public static void checkURL(WebDriver p_driver, String p_expectedURL)
     {
