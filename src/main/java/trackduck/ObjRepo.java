@@ -46,8 +46,10 @@ public class ObjRepo
 
     final public static String pagingElementXPath = "//p[@class='ng-binding'][text()='Loading more issues...']";
 
-    final public static String loginEmail = "justine@i3digital.com";
-    final public static String loginPassword = "i3d1g1t@l001";
+    // TODO - read from settings xml
+    // Placeholder values for checking in to source control, edit these before running
+    final public static String loginEmail = "email@domain.com";
+    final public static String loginPassword = "mypassword";
 
     //endregion
 }
