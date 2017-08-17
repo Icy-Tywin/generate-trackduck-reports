@@ -17,3 +17,19 @@ The HTML reports use [Bootstrap](http://getbootstrap.com/) styles
 An example of a generated report can be viewed [here](http://keylimecode.com/wp-content/uploads/2017/08/0516-DCU-The-Helix_20170208033308.html)
 
 ![Trackduck HTML Report](http://i.imgur.com/tPgUv37.png)
+
+To use Imgur and Dropbox you will need to create a file called appsettings.xml in C:\Automation\Settings. On the to do list for this project is to make that path configurable. The xml file should have this structure
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><settings>
+	<Imgur>
+		<client_id>IMGUR_CLIENTID</client_id>
+		<client_secret>IMGUR_CLIENTSECRET</client_secret>
+		<token>IMGUR_TOKEN</token>
+		<refresh_token>IMGUR_REFRESHTOKEN</refresh_token>
+	</Imgur>	
+	<Dropbox>		
+		<access_token>DROPBOX_ACCESSTOKEN</access_token>
+	</Dropbox>	
+</settings>
+```
