@@ -1,5 +1,6 @@
 package trackduck;
 
+import business.Settings;
 import org.openqa.selenium.By;
 
 public class ObjRepo
@@ -46,10 +47,8 @@ public class ObjRepo
 
     final public static String pagingElementXPath = "//p[@class='ng-binding'][text()='Loading more issues...']";
 
-    // TODO - read from settings xml
-    // Placeholder values for checking in to source control, edit these before running
-    final public static String loginEmail = "email@domain.com";
-    final public static String loginPassword = "mypassword";
+    final public static String loginEmail = Settings.read("//Trackduck/username");
+    final public static String loginPassword = Settings.read("//Trackduck/password");
 
     //endregion
 }

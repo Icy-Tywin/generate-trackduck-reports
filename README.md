@@ -27,9 +27,18 @@ To use Imgur and Dropbox you will need to create a file called appsettings.xml i
 		<client_secret>IMGUR_CLIENTSECRET</client_secret>
 		<token>IMGUR_TOKEN</token>
 		<refresh_token>IMGUR_REFRESHTOKEN</refresh_token>
+		<album_id_trackduck_reports>IMGUR_ALBUM_ID</album_id_trackduck_reports>
 	</Imgur>	
 	<Dropbox>		
 		<access_token>DROPBOX_ACCESSTOKEN</access_token>
-	</Dropbox>	
+	</Dropbox>
+	<Trackduck>
+    		<username>TRACKDUCK_USERNAME</username>
+    		<password>TRACKDUCK_PASSWORD</password>
+    		<project_url>TRACKDUCK_PROJECTURL</project_url>
+    		<project_name>Client name - Code - Project name</project_name>
+    		<project_start_date>TRACKDUCK_PROJECT_START</project_start_date>
+    		<project_end_date>TRACKDUCK_PROJECT_END</project_end_date>
+    	</Trackduck>
 </settings>
 ```

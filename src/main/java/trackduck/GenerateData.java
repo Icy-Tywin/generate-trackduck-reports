@@ -1,6 +1,7 @@
 package trackduck;
 
 import business.Common;
+import business.Settings;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -19,12 +20,11 @@ import java.util.concurrent.TimeUnit;
 
 public class GenerateData
 {
-    // TODO - read these from appsettings.xml
     //===CONFIGURE THESE SETTINGS FOR EACH PROJECT===
-    public String PROJECTURL = "https://app.trackduck.com/project/59358e8a834edffb458ba89d/issue";
-    public static String PROJECTNAME = "Client name - Code - Project name";
-    public static String PROJECTSTARTDATE = "05/06/2017";
-    public static String PROJECTENDDATE = "23/06/2017";
+    public String PROJECTURL = Settings.read("//Trackduck//project_url");
+    public static String PROJECTNAME = Settings.read("//Trackduck//project_name");
+    public static String PROJECTSTARTDATE = Settings.read("//Trackduck//project_start_date");
+    public static String PROJECTENDDATE = Settings.read("//Trackduck//project_end_date");
     //===================
 
     public static WebDriver driver;

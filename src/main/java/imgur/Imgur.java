@@ -1,6 +1,5 @@
 package imgur;
 
-import business.Common;
 import business.Image;
 import business.Settings;
 import org.json.simple.JSONObject;
@@ -22,12 +21,7 @@ import java.util.Map;
 public class Imgur
 {
     public static String BASE_URL = "https://api.imgur.com/3/";
-
-    // TODO - make these configurable, read from appsettings.xml
-    public static String ALBUM_ID_TESTNG_REPORTS = "G1yiy";
-    public static String ALBUM_ID_TRACKDUCK_REPORTS = "94Ljl";
-    public static String ALBUM_ID_SCREENSHOTS = "A0oaN";
-    public static String ALBUM_ID_TEST = "wJeJz";
+    public static String ALBUM_ID_TRACKDUCK_REPORTS = Settings.read("//Imgur/album_id_trackduck_reports");
 
     public String getToken()
     {
