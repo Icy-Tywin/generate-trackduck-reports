@@ -23,6 +23,7 @@ target/
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+.idea/markdown-navigator/
 
 # Gradle:
 .idea/**/gradle.xml
