@@ -122,6 +122,12 @@ public class GenerateHTML
 
         try
         {
+            // If the folder that we're going to store the report in doesn't exist - create it
+            File reportPath = new File(String.valueOf(REPORTPATH));
+            if (!reportPath.exists())
+                reportPath.mkdir();
+
+            // Create the html file and save the html that we've built up
             PrintWriter out = new PrintWriter(new File(HTMLFILEPATH));
             out.println(html);
             out.close();
